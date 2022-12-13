@@ -1,0 +1,820 @@
+Last login: Sun Nov 13 02:39:03 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+MacBook-Air-Edward:~ edwarddidyk$ cd Desktop/Web Dev Folder
+-bash: cd: Desktop/Web: No such file or directory
+MacBook-Air-Edward:~ edwarddidyk$ cd Desktop/
+MacBook-Air-Edward:Desktop edwarddidyk$ cd Web\ Dev\ Folder/
+MacBook-Air-Edward:Web Dev Folder edwarddidyk$ mkdir todolist-v1
+MacBook-Air-Edward:Web Dev Folder edwarddidyk$ cd todolist-v1/
+MacBook-Air-Edward:todolist-v1 edwarddidyk$ touch index.html app.js
+MacBook-Air-Edward:todolist-v1 edwarddidyk$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (todolist-v1)
+version: (1.0.0)
+description:
+entry point: (app.js)
+test command:
+git repository:
+keywords:
+author: edwrdddk
+license: (ISC)
+About to write to /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/package.json:
+
+{
+  "name": "todolist-v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "edwrdddk",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+MacBook-Air-Edward:todolist-v1 edwarddidyk$ npm i express body-parser
+
+added 57 packages, and audited 58 packages in 3s
+
+7 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+MacBook-Air-Edward:todolist-v1 edwarddidyk$ Atom .
+MacBook-Air-Edward:todolist-v1 edwarddidyk$ nodemon app.js
+[nodemon] 2.0.20
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+^CMacBook-Air-Edward:todolist-v1 edwarddidyk$ npm install ejs
+
+added 16 packages, and audited 74 packages in 2s
+
+9 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+MacBook-Air-Edward:todolist-v1 edwarddidyk$ nodemon app.js
+[nodemon] 2.0.20
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:27
+  }
+  ^
+
+SyntaxError: Unexpected token '}'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.12.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+ReferenceError: /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/views/list.ejs:9
+    7|   <body>
+    8|
+ >> 9|     <% if (kindOfDay === Saturday || kindOfDay === Sunday) { %>
+    10|       <h1 style="color: purple"><%= kindOfDay %> To Do List </h1>
+    11|     <% } else { %>
+    12|       <h1 style="color: blue"><%= kindOfDay %> To Do List </h1>
+
+Saturday is not defined
+    at eval (eval at compile (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:673:12), <anonymous>:12:26)
+    at list (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:274:36)
+    at exports.renderFile [as engine] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/application.js:657:10)
+    at Function.render (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/application.js:609:3)
+    at ServerResponse.render (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/response.js:1039:7)
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:59:7
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+ReferenceError: /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/views/list.ejs:9
+    7|   <body>
+    8|
+ >> 9|     <% if (kindOfDay === Saturday || kindOfDay === Sunday) { %>
+    10|       <h1 style="color: purple"><%= kindOfDay %> To Do List </h1>
+    11|     <% } else { %>
+    12|       <h1 style="color: blue"><%= kindOfDay %> To Do List </h1>
+
+Saturday is not defined
+    at eval (eval at compile (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:673:12), <anonymous>:12:26)
+    at list (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:274:36)
+    at exports.renderFile [as engine] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/application.js:657:10)
+    at Function.render (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/application.js:609:3)
+    at ServerResponse.render (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/response.js:1039:7)
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:59:7
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+ReferenceError: /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/views/list.ejs:9
+    7|   <body>
+    8|
+ >> 9|     <% if (kindOfDay === Saturday || kindOfDay === Sunday) { %>
+    10|       <h1 style="color: purple"><%= kindOfDay %> To Do List </h1>
+    11|     <% } else { %>
+    12|       <h1 style="color: blue"><%= kindOfDay %> To Do List </h1>
+
+Saturday is not defined
+    at eval (eval at compile (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:673:12), <anonymous>:12:26)
+    at list (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:274:36)
+    at exports.renderFile [as engine] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/application.js:657:10)
+    at Function.render (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/application.js:609:3)
+    at ServerResponse.render (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/response.js:1039:7)
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:59:7
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+ReferenceError: /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/views/list.ejs:9
+    7|   <body>
+    8|
+ >> 9|     <% if (kindOfDay === Saturday || kindOfDay === Sunday) { %>
+    10|       <h1 style="color: purple"><%= kindOfDay %> To Do List </h1>
+    11|     <% } else { %>
+    12|       <h1 style="color: blue"><%= kindOfDay %> To Do List </h1>
+
+Saturday is not defined
+    at eval (eval at compile (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:673:12), <anonymous>:12:26)
+    at list (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:274:36)
+    at exports.renderFile [as engine] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/application.js:657:10)
+    at Function.render (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/application.js:609:3)
+    at ServerResponse.render (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/response.js:1039:7)
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:59:7
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+ReferenceError: /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/views/list.ejs:9
+    7|   <body>
+    8|
+ >> 9|     <% if (kindOfDay === Saturday || kindOfDay === Sunday) { %>
+    10|       <h1 style="color: purple"><%= kindOfDay %> To Do List </h1>
+    11|     <% } else { %>
+    12|       <h1 style="color: blue"><%= kindOfDay %> To Do List </h1>
+
+Saturday is not defined
+    at eval (eval at compile (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:673:12), <anonymous>:12:26)
+    at list (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:274:36)
+    at exports.renderFile [as engine] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/application.js:657:10)
+    at Function.render (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/application.js:609:3)
+    at ServerResponse.render (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/response.js:1039:7)
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:59:7
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+^CMacBook-Air-Edward:todolist-v1 edwarddidyk$ nodemon app.js
+[nodemon] 2.0.20
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+TypeError: Cannot read properties of undefined (reading 'newItem')
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:27:28
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+TypeError: Cannot read properties of undefined (reading 'newItem')
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:27:26
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+TypeError: Cannot read properties of undefined (reading 'newItem')
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:27:26
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+TypeError: Cannot read properties of undefined (reading 'newItem')
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:26:24
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+Work
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+ReferenceError: /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/views/list.ejs:9
+    7|   <body>
+    8|
+ >> 9|     <h1> <%= kindOfDay %> </h1>
+    10|
+    11|     <ul>
+    12|       <li>Drink coffee</li>
+
+kindOfDay is not defined
+    at eval (eval at compile (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:673:12), <anonymous>:12:26)
+    at list (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:274:36)
+    at exports.renderFile [as engine] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/application.js:657:10)
+    at Function.render (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/application.js:609:3)
+    at ServerResponse.render (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/response.js:1039:7)
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:27:7
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+ReferenceError: nItem is not defined
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:21:52
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:280:10)
+    at urlencodedParser (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+ReferenceError: nItem is not defined
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:21:52
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:280:10)
+    at urlencodedParser (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+ReferenceError: nItem is not defined
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:21:52
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:280:10)
+    at urlencodedParser (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+ReferenceError: nItem is not defined
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:23:52
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:280:10)
+    at urlencodedParser (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+ReferenceError: nItem is not defined
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:23:52
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:280:10)
+    at urlencodedParser (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:12
+yx = 4
+   ^
+
+TypeError: Assignment to constant variable.
+    at Object.<anonymous> (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:12:4)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.12.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+body-parser deprecated undefined extended: provide extended option app.js:10:20
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+{ newItem: 'Check', button: '' }
+{ newItem: 'Cool', list: 'Work' }
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+TypeError: res.render is not a function
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:46:7
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:280:10)
+    at SendStream.error (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/serve-static/index.js:121:7)
+    at SendStream.emit (node:events:513:28)
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+node:internal/modules/cjs/loader:998
+  throw err;
+  ^
+
+Error: Cannot find module 'date.js'
+Require stack:
+- /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)
+    at Module._load (node:internal/modules/cjs/loader:841:27)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js' ]
+}
+
+Node.js v18.12.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+node:internal/modules/cjs/loader:998
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1date.js'
+Require stack:
+- /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)
+    at Module._load (node:internal/modules/cjs/loader:841:27)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js' ]
+}
+
+Node.js v18.12.0
+[nodemon] app crashed - waiting for file changes before starting...
+^CMacBook-Air-Edward:todolist-v1 edwarddidyk$ nodemon app.js
+[nodemon] 2.0.20
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+node:internal/modules/cjs/loader:998
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1date.js'
+Require stack:
+- /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)
+    at Module._load (node:internal/modules/cjs/loader:841:27)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js' ]
+}
+
+Node.js v18.12.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+node:internal/modules/cjs/loader:998
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1date.js'
+Require stack:
+- /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)
+    at Module._load (node:internal/modules/cjs/loader:841:27)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js' ]
+}
+
+Node.js v18.12.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Module {
+  id: '/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/date.js',
+  path: '/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1',
+  exports: {},
+  filename: '/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/date.js',
+  loaded: false,
+  children: [],
+  paths: [
+    '/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules',
+    '/Users/edwarddidyk/Desktop/Web Dev Folder/node_modules',
+    '/Users/edwarddidyk/Desktop/node_modules',
+    '/Users/edwarddidyk/node_modules',
+    '/Users/node_modules',
+    '/node_modules'
+  ]
+}
+Server is running
+ReferenceError: day is not defined
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:19:34
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/express/lib/router/index.js:280:10)
+    at SendStream.error (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules/serve-static/index.js:121:7)
+    at SendStream.emit (node:events:513:28)
+^CMacBook-Air-Edward:todolist-v1 edwarddidyk$ nodemon app.js
+[nodemon] 2.0.20
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+Module {
+  id: '/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/date.js',
+  path: '/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1',
+  exports: {},
+  filename: '/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/date.js',
+  loaded: false,
+  children: [],
+  paths: [
+    '/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/node_modules',
+    '/Users/edwarddidyk/Desktop/Web Dev Folder/node_modules',
+    '/Users/edwarddidyk/Desktop/node_modules',
+    '/Users/edwarddidyk/node_modules',
+    '/Users/node_modules',
+    '/node_modules'
+  ]
+}
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+DDK
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+[Function: getDay]
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Thursday, November 17
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/date.js:14
+  return = today.toLocaleDateString("en-US", options);
+         ^
+
+SyntaxError: Unexpected token '='
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1088:15)
+    at Module._compile (node:internal/modules/cjs/loader:1123:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/edwarddidyk/Desktop/Web Dev Folder/todolist-v1/app.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+
+Node.js v18.12.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+ [nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
+[nodemon] restarting due to changes...
+[nodemon] starting `node app.js`
+Server is running
